@@ -3,7 +3,7 @@
 
 N = int(input())
 cost= []
-dp = [0 for i in range(301)]
+dp = [0 for i in range(N)]
 for _ in range(N):
     cost.append(int(input()))
 if(N==1):
