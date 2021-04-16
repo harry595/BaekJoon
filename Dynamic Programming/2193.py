@@ -1,7 +1,7 @@
 # https://www.acmicpc.net/problem/2193 이친수 문제
 # sol(1)=1 sol(2)=2 sol(3)=3 sol(4)=5
-RESULT=0
 
+RESULT=0
 def sol(result_list,i,t):
     tmp_list1=result_list[:]
     if(i==t):
