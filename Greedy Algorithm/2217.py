@@ -11,4 +11,3 @@ gd.sort(reverse=True)
 for i in range(0,t):
     result.append(gd[i]*(i+1))
 print(max(result))
-
