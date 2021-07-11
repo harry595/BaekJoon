@@ -23,8 +23,6 @@ def solution(inputString):
                 else:
                     return -(count-1)
     if len(queue) > 0:
-        print(queue)
         return -leninputString+1
     else:
         return success
-    
