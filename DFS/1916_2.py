@@ -2,19 +2,6 @@
 import sys
 from heapq import heappush, heappop
 
-input = sys.stdin.readline
-N = int(input())
-M = int(input())
-
-Mgraph = [[] for _ in range(N+1)]
-distance = [sys.maxsize]*(N+1)
-
-for _ in range(M):
-    a, b, c = map(int, input().split())
-    Mgraph[a].append([b, c])
-start, end = map(int, input().split())
-
-
 def dijkstra(start):
     heap = []
     heappush(heap, (0, start))
@@ -28,6 +15,17 @@ def dijkstra(start):
                 distance[a] = cost+b
                 heappush(heap, (cost+b, a))
 
+input = sys.stdin.readline
+N = int(input())
+M = int(input())
+
+Mgraph = [[] for _ in range(N+1)]
+distance = [sys.maxsize]*(N+1)
+
+for _ in range(M):
+    a, b, c = map(int, input().split())
+    Mgraph[a].append([b, c])
+start, end = map(int, input().split())
 
 dijkstra(start)
 print(distance[end])
