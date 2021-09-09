@@ -20,7 +20,7 @@ while(len(del_list)!=t):
                 del_list.append(i)
             elif( set(gd[i][1:-1]).issubset(set(build_list.keys()))):
                 tmp_list=[]
-                for tmp in gd[i][1:-1]:
+                for tmp in gd[i][1:-1]: 
                     tmp_list.append(build_list[tmp])
                 build_list[i]=max(tmp_list)+gd[i][0]
                 del_list.append(i)
